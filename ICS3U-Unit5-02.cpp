@@ -9,33 +9,33 @@
 
 
 void area(float baseAsFloat, float heightAsFloat) {
-    //variables
+    // variables
     float areaAsFloat;
 
-    //process and output
+    // process and output
     areaAsFloat = baseAsFloat * heightAsFloat / 2;
     std::cout << "The area of the triangle is " << areaAsFloat << "cm²";
 }
 
 int main() {
-    //creating variables
+    // creating variables
     std::string(base);
     std::string(height);
     float baseAsFloat;
     float heightAsFloat;
 
-    //input
+    // input
     std::cout << "Enter the base length of a triangle(cm): ";
     std::cin >> base;
     std::cout << "Enter the height of a triangle(cm): ";
     std::cin >> height;
     std::cout << "\n";
 
-    //process
+    // process
     try {
         baseAsFloat = std::stof(base);
         heightAsFloat = std::stof(height);
-        if (baseAsFloat <= 0 or heightAsFloat <= 0) {
+        if (baseAsFloat <= 0 || heightAsFloat <= 0) {
             std::cout << "A triangle cannot have a height or "
                       << "a base with a value that's equal or less than 0.";
         } else {
