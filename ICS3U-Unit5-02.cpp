@@ -7,22 +7,24 @@
 #include <iostream>
 #include <string>
 
-std::string(base);
-std::string(height);
-float baseAsFloat;
-float heightAsFloat;
-float areaAsFloat;
 
 void area(float baseAsFloat, float heightAsFloat) {
-    //process and output
+    //variables
+    float areaAsFloat;
 
+    //process and output
     areaAsFloat = baseAsFloat * heightAsFloat / 2;
     std::cout << "The area of the triangle is " << areaAsFloat << "cm²";
 }
 
 int main() {
-    //input
+    //creating variables
+    std::string(base);
+    std::string(height);
+    float baseAsFloat;
+    float heightAsFloat;
 
+    //input
     std::cout << "Enter the base length of a triangle(cm): ";
     std::cin >> base;
     std::cout << "Enter the height of a triangle(cm): ";
