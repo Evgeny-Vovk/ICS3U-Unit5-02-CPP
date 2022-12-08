@@ -12,7 +12,7 @@ void area(float baseAsFloat, float heightAsFloat) {
     // variables
     float areaAsFloat;
 
-    // process and output
+    // aprocess and output
     areaAsFloat = baseAsFloat * heightAsFloat / 2;
     std::cout << "The area of the triangle is " << areaAsFloat << "cm²";
 }
